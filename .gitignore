@@ -1,0 +1,9 @@
+#env
+*.env
+
+langchain
+images
+documentos
+
+#Ambiente virtual
+.venv
