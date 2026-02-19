@@ -4,6 +4,7 @@
 langchain
 images
 documentos
+.vscode
 
 #Ambiente virtual
 .venv
