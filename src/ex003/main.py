@@ -72,6 +72,7 @@ if __name__ == "__main__":
     # Gerenciando histórico manualmente sem checkpointers para ententimento.
     while True:
         user_input = input("Digite a sua mensagem: ")
+        print()
 
         if user_input.lower() in ["q", "quit"]:
             print("Bye!")
