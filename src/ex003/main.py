@@ -24,8 +24,8 @@ llm = ChatOpenAI(
 
 # Reducer for log only
 def reducer(a: Messages, b: Messages) -> Messages:
-    print(f">Reducer - {a=},  {b=}")
-    print()
+    # print(f">Reducer - {a=},  {b=}")
+    # print()
     return add_messages(a, b)
 
 
@@ -39,9 +39,8 @@ class AgentState(TypedDict):
 def call_llm(state: AgentState) -> AgentState:
     # Trigger do reducer
     llm_response = llm.invoke(state["messages"])
-    # llm_response = AIMessage("Como você está?")
-    print(f">call_llm: {llm_response=}")
-    print()
+    # print(f">call_llm: {llm_response=}")
+    # print()
     return {"messages": [llm_response]}
 
 
