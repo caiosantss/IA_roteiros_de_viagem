@@ -5,6 +5,7 @@ langchain
 images
 documentos
 .vscode
+__pycache__
 
 #Ambiente virtual
 .venv
